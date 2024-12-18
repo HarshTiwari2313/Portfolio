@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Tiwari Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d8a36154d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="./image/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Web Developer</p>
+                <h1>Hi, I'm <span>Harsh Tiwari</span> From <br>India.</h1>
+            </div>
+        </div>
+
+    </div>
+    <!--About   -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./image/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a hard working, Self motivated person in my life. I am able to work in any situation. I
+                        am always trying to learn new skill and enhance my knowledge.
+                        <br> My Hobbies : Playing cricket , Listening Music, Solving Coding Problem...
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Internship/Training</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Java</span></li>
+                            <li><span>Advance Java</span></li>
+                            <li><span>Html</span></li>
+                            <li><span>Css</span></li>
+                            <li><span>Java Script</span></li>
+                            <li><span>Spring & <br>SpringBoot(OnGoing) </span></li>
+                            <li><span>ReactJS(OnGoing)</span></li>
+                            <li><span>C++</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="training">
+                                <span>1-Full Stack Java From Croma Campus Noida</span>
+                                <span id="training-schedule">
+                                    <span><b>From- </b></span>Aug 2024 to Ongoing
+                                </span>
+                            </li>
+                            <li class="training">
+                                <span>2-Youth Employment Program – TCS’ YEP </span>
+                                <span id="training-schedule">
+                                    <span><b>From- </b></span>July2023 to-Aug2023
+                                </span>
+                            </li>
+                            <li class="training">
+                                <span>3-Internshala Training </span>
+                                <span id="training-schedule">
+                                    <span><b> From- </b></span>Aug 2022 to Sept2022
+                                </span>
+                            </li>
+                            <li class="training">
+                                <span>4-Indian Railways Technical Training Centre DLW Varanasi.</span>
+                                <span id="training-schedule">
+                                    <span><b> From- </b></span>June2019 to July 2019
+                                </span>
+                            </li>
+                            <li class="training">
+                                <span>5-Training from GSR FORD Pvt.Ltd</span>
+                                <span id="training-schedule">
+                                    <span><b> From- </b></span>June 2018 to July 2018
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                       <table class="table-education">
+                           <thead>
+                            <th>Course</th>
+                            <th>Session</th>
+                            <th>College Name</th>
+                            <th>Result</th>
+                           </thead>
+                           
+                           <tbody>
+                               <tr>
+                                <td>BTech (CSE) </td>
+                                <td>2021-2024</td>
+                                <td> Feroze Gandhi Institute  Of <br> Engineering and Technology</td>
+                                <td>8.26</td>
+                               </tr>
+                               <tr>
+                                <td>Polytechnic(MechanicalEngineering)</td>
+                                <td>2017-2020</td>
+                                <td>Government Polytechnic Bareilly</td>
+                                <td>73.53%</td>
+                               </tr>
+                               <tr>
+                                <td>Class-X</td>
+                                <td>2017</td>
+                                <td>Raj English School</td>
+                                <td>9 CGPA</td>
+                               </tr>
+                                
+                           </tbody>
+                           
+                       </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-->
+
+    <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a fresher, I offer web development services, including frontend, backend, full-stack development, e-commerce, CMS, web applications, responsive design, API integration, and website maintenance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-child-reaching"></i>
+                    <h2>Teaching</h2>
+                    <p>As a fresher, I offer teaching services for Computer Science and Engineering (CSE) subjects,include DBMS ,ALGO,TOC etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-question"></i>
+                    <h2>Coding Problem</h2>
+                    <p>As a fresher, I offer problem solving services .</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+         </div>
+    </div>
+
+    <!--Portfolio   -->
+    <div id="portfolio">
+          <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                    <div class="work">
+                        <img src="./image/work-1.jpeg">
+                        <div class="layer">
+                            <h3>Spotify Clone</h3>
+                            <p>I use C++ with its OOP’S concept for making this project .This project is giving by 
+                                Internshala <br>during Training period.</p>
+                                <a href="https://github.com/HarshTiwari2313/SPOTIFYPROJECT"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./image/work-2.jpeg">
+                        <div class="layer">
+                            <h3> Login-Registration Application</h3>
+                            <p>This project created by me during my Full Stack java Training.I use HTML,CSS,JS,<br>Servlet,Jsp and JDBC.
+                            </p>
+                                <a href="nk: https://github.com/HarshTiwari2313/Login-Registration"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./image/work-3.jpeg">
+                        <div class="layer">
+                            <h3> Virtual-Cricket-Game</h3>
+                            <p>I use C++ with its OOP’S concept for making this project .This project is giving by 
+                                Internshala during Training period.</p>
+                                <a href="https://github.com/HarshTiwari2313/VirtualCricketGame"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- Contact -->
+     <div id="contact">
+           <div class="container">
+              <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>harshashok0099@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 6488729911</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/official_harsh2313/profilecard/?igsh=eWJlZ2pzcHR5cXZv"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/harshtiwari38b1a1194/"><i class="fa-brands fa-linkedin-in"></i></a>
+                       <a href="https://github.com/HarshTiwari2313"><i class="fa-brands fa-github"></i></a>
+                         <a href="https://www.facebook.com/harsh.tripathi.96780?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="./files/Harsh_Tiwari.pdf" download class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                       <form action="">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                        <textarea name="message" rows="6"placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                       </form>
+                </div>
+
+                
+              </div>
+           </div>  
+               <div class="copyright">
+                <p>Copyright  &copy Harsh Tiwari. all right reserved</p>
+               </div>
+     </div>
+
+
+
+
+    <script src="./portfolio.js"></script>
+    <script src="./menuScript.js"></script>
+</body>
+
+</html>
